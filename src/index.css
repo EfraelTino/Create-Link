@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+:root{
+  --primary-color:#131212;
+  --secondary-color:#212121;
+  --color-white: #ffffff;
+
+  --shadow-one:0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(255, 255, 255, 0.05);
+
+  --borders:0px solid transparent;
+
+  --font-global:'Inter', sans-serif;
+
+  --transition150: all 150ms;
+	--transition300: all 300ms;
+	--transition4: all .25s ease;
+}
+
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: var(--font-global);
+	color: var(--color-white);
+}
+
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  background-color: var(--primary-color);
+}
+
+.cl-normal {
+	width: 1200px;
+	margin: auto;
+	transition: var(--transition150);
+}
+
+
+@media screen and (max-width: 1400px) {
+	.cl-normal {
+		width: 900px;
+		margin: auto;
+	}
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+	.cl-normal {
+		width: 600px;
+		margin: auto;
+	}
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+	.cl-normal {
+		width: 85%;
+		margin: auto;
+	}
+
+}
+
+
+
+@media screen and (max-width: 480px) {}
+
+
+
+
+@media screen and (max-width: 360px) {
+
+	.cl-normal {
+		width: 92%;
+		margin: auto;
+	}
+}
